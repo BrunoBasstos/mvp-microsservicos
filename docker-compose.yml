@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 
 services:
   api-todo:
@@ -26,18 +26,9 @@ services:
       - "5001:5001"
     environment:
       - FLASK_ENV=development
-      - FLASK_APP=app.py
-      - FLASK_RUN_PORT=5001
-      - WEATHER_API_KEY=SET_YOUR_API_KEY_HERE
-      - WEATHER_API_URL=http://api.openweathermap.org/data/2.5
-      - WEATHER_API_UNITS=metric
-      - WEATHER_API_LANG=pt_br
-      - WEATHER_API_TIMEZONE="+03:00"
-      - GEOCODE_API_URL=http://api.openweathermap.org/geo/1.0
-      - GEOCODE_API_DEFAULT_LIMIT=5
     networks:
       - todo-network
-  
+
   app-todo:
     image: app-todo
     container_name: app-todo
@@ -55,8 +46,6 @@ services:
     networks:
       - todo-network
 
-
 networks:
   todo-network:
     driver: bridge
-      
