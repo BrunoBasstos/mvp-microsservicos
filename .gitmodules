@@ -1,9 +1,12 @@
 [submodule "mvp3-app-todo"]
 	path = mvp3-app-todo
 	url = git@github.com:BrunoBasstos/mvp3-app-todo.git
+	branch = main
 [submodule "mvp3-api-bridge"]
 	path = mvp3-api-bridge
 	url = git@github.com:BrunoBasstos/mvp3-api-bridge.git
+	branch = main
 [submodule "mvp3-api-todo"]
 	path = mvp3-api-todo
 	url = git@github.com:BrunoBasstos/mvp3-api-todo.git
+	branch = main
