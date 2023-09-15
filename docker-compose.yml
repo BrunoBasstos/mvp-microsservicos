@@ -1,9 +1,9 @@
 version: "3"
 
 services:
-  api-todo:
-    image: api-todo
-    container_name: api-todo
+  todo-api:
+    image: todo-api
+    container_name: todo-api
     build:
       context: ./mvp3-api-todo
       dockerfile: Dockerfile
@@ -16,9 +16,9 @@ services:
     networks:
       - todo-network
 
-  api-bridge:
-    image: api-bridge
-    container_name: api-bridge
+  bridge-api:
+    image: bridge-api
+    container_name: bridge-api
     build:
       context: ./mvp3-api-bridge
       dockerfile: Dockerfile
@@ -29,20 +29,20 @@ services:
     networks:
       - todo-network
 
-  app-todo:
-    image: app-todo
-    container_name: app-todo
+  todo-app:
+    image: todo-app
+    container_name: todo-app
     build:
       context: ./mvp3-app-todo
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
     environment:
-      - TODO_API_URL=http://api-todo:5000
-      - BRIDGE_API_URL=http://api-bridge:5001
+      - TODO_API_URL=http://todo-api:5000
+      - BRIDGE_API_URL=http://bridge-api:5001
     depends_on:
-      - api-todo
-      - api-bridge
+      - todo-api
+      - bridge-api
     networks:
       - todo-network
 
