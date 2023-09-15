@@ -22,7 +22,7 @@ Não é necessário utilizar este repositório para executar o projeto. Você po
 
 ## Como executar
 
-1. Clone este repositório usando `git clone --recurse-submodules` para clonar os submódulos também.
+1. Clone este repositório usando `git clone git@github.com:BrunoBasstos/mvp-microsservicos.git --recurse-submodules` para clonar os submódulos também.
     - Caso você já tenha clonado o repositório sem utilizar a flag `--recurse-submodules`, execute `git submodule update --init --recursive` para clonar os submódulos.
     - Isto criará as seguintes pastas:
         - `mvp3-app-todo` com o código da aplicação frontend;
