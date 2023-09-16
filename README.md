@@ -1,5 +1,6 @@
 # mvp-microsservicos
 PUC-RIO - ENGENHARIA DE SOFTWARE - MVP III
+![todo-app-diagrama](https://github.com/BrunoBasstos/mvp-microsservicos/assets/5402439/940bb453-9620-4fbb-b703-44795e7d268e)
 
 Este é um MVP para conclusão da terceira sprint do curso de pós graduação em engenharia de software da PUC-Rio.
 
@@ -22,7 +23,7 @@ Não é necessário utilizar este repositório para executar o projeto. Você po
 
 ## Como executar
 
-1. Clone este repositório usando `git clone --recurse-submodules` para clonar os submódulos também.
+1. Clone este repositório usando `git clone git@github.com:BrunoBasstos/mvp-microsservicos.git --recurse-submodules` para clonar os submódulos também.
     - Caso você já tenha clonado o repositório sem utilizar a flag `--recurse-submodules`, execute `git submodule update --init --recursive` para clonar os submódulos.
     - Isto criará as seguintes pastas:
         - `mvp3-app-todo` com o código da aplicação frontend;
