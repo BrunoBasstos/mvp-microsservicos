@@ -1,6 +1,8 @@
 # mvp-microsservicos
 PUC-RIO - ENGENHARIA DE SOFTWARE - MVP III
 
+![todo-app-diagrama](https://github.com/BrunoBasstos/mvp-microsservicos/assets/5402439/94671d28-dd28-478b-8b61-8f99f81641f5)
+
 Este é um MVP para conclusão da terceira sprint do curso de pós graduação em engenharia de software da PUC-Rio.
 
 O escopo dete projeto é a criação de uma aplicação implementando arquitetura de microsserviços.
