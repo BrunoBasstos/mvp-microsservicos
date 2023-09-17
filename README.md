@@ -30,6 +30,9 @@ Não é necessário utilizar este repositório para executar o projeto. Você po
         - `mvp3-api-todo` com o código da aplicação backend;
         - `mvp3-api-bridge` com o código da aplicação que intermedia a comunicação com a [OpenWeather API](http://openweathermap.org).
 2. Acesse a pasta de cada aplicação e crie o arquivo .env para cada uma delas usando os respectivos arquivos .env.example como base.
+
+> **IMPORTANTE** Não esqueça criar o arquivo .env para todas as aplicações para que elas possam inicializar e se comunicar corretamente. <br>[Clique aqui](https://home.openweathermap.org/users/sign_up) e registre-se no site da OpenWeather API para obter uma chave de acesso e preencha a variável `WEATHER_API_KEY` no arquivo .env da aplicação `mvp3-api-bridge`.
+
 3. Execute o comando `docker compose up -d --build` para criar as imagens e os containers e iniciar as aplicações.
 4. Acesse a aplicação em `http://localhost:3000`.
     - Você poderá fazer um aesso inicial com o usuário `admin@mail.com` e senha `admin1234` ou registrar-se para iniciar como um usuário comum.
